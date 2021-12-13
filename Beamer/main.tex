@@ -1,0 +1,179 @@
+\documentclass{ctexbeamer}
+
+% packages
+% \usepackage{ctex}
+\usepackage{latexsym,amsmath,multicol,booktabs,calligra}
+\usepackage{graphicx}
+
+% colors
+\usepackage{xcolor}
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{deepred}{rgb}{0.6,0,0}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+\definecolor{halfgray}{gray}{0.55}
+
+% fonts
+\usefonttheme[stillsansserifsmall]{serif}
+\usepackage{xeCJK}
+
+% code style
+\usepackage{listings}
+\lstset{
+    basicstyle=\ttfamily\small,
+    keywordstyle=\bfseries\color{deepblue},
+    emphstyle=\ttfamily\color{deepred},    % Custom highlighting style
+    stringstyle=\color{deepgreen},
+    numbers=left,
+    numberstyle=\small\color{halfgray},
+    rulesepcolor=\color{red!20!green!20!blue!20},
+    frame=shadowbox,
+}
+
+% info
+\title[甘雨快来我身边] % (optional, use only with long paper titles)
+{There Is No Largest Prime Number}
+
+\subtitle
+{Include Only If Paper Has a Subtitle}
+
+\author[Author] % (optional, use only with lots of authors)
+{LuoLuoKong}
+
+\institute[理学院] % (optional, but mostly needed)
+{
+  冯家屯男子电刀大学
+ }
+
+\date[CFP 2003] % (optional, should be abbreviation of conference name)
+{Conference on Fabulous Presentations, 2003}
+
+\subject{Theoretical Computer Science}
+
+\logo{\vspace*{-0.5cm}\includegraphics[height=1cm]{pic/logo.png}}
+
+\usepackage{jk} % basic
+
+% main
+\begin{document}
+
+  % cover
+  \begin{frame}
+    \titlepage
+    \begin{figure}[htpb]
+      \begin{center}
+          \vspace{-0.5cm}
+          \includegraphics[width=0.2\linewidth]{pic/pink.jpg}
+      \end{center}
+    \end{figure}
+  \end{frame}
+  
+  % table-of-contents
+  \begin{frame}
+    \frametitle{Outline}
+    \tableofcontents
+  \end{frame}
+  
+  % pages
+  \section{One}
+    \subsection{One-one}
+    \begin{frame}{Theorem and Example}
+      \begin{theorem}
+          我是李方琦爸爸。
+      \end{theorem}
+      \begin{example}
+          我也是。
+      \end{example}
+    \end{frame}
+    
+    \subsection{One-two}
+    \begin{frame}{items & enumerate}
+        \begin{itemize}
+            \item 和泉纱雾
+            \item 远坂凛
+        \end{itemize}
+        \vbox{}
+        \begin{enumerate}
+            \item 空条徐伦
+            \item 明日香·兰格雷
+        \end{enumerate}
+    \end{frame}
+  
+  \section{Two}
+    \subsection{Two-one}
+    \begin{frame}{Proof & block}
+      \begin{proof}
+          \begin{enumerate}
+              \item<1-> First, we need;
+              \item<2-> Secound, we can;
+              \item<3-> Then, take it easy;
+              \item<1-> Yes, we do it!
+          \end{enumerate}
+      \end{proof}  
+    \end{frame}
+    
+    \subsection{Two-two}
+    \begin{frame}
+        \begin{columns}[t]
+            \column{.5\textwidth}
+            \begin{block}{Answered Questions}
+                我能吃下玻璃而不伤身
+            \end{block}
+    
+            \column{.5\textwidth}
+            \begin{block}{Open Questions}
+                i can eat windows.
+            \end{block}
+        \end{columns}
+    \end{frame}
+  
+  \section{code like}
+  \subsection{python}
+  \begin{frame}[fragile]{Code}
+      \begin{lstlisting}
+        import re
+        li = input()
+        PhoneRegex = re.compile(r'xxx')
+        m = re.search(li)
+      \end{lstlisting}
+  \end{frame}
+  
+  \subsection{模板对比}
+  \begin{frame}{冯家屯电刀 vs 北京大学}
+
+\begin{figure}[htpb]
+    \centering
+    \includegraphics[width=0.2\linewidth]{pic/logo.jpg}
+\end{figure}
+
+\vspace{-0.6cm}
+
+\begin{table}
+\centering
+\begin{tabular}{ccc} 
+\toprule
+特征      & 冯家屯电刀 & 北京大学       \\ 
+\hline
+小狐狸logo & \checkmark    & \times      \\ 
+\hline
+\fbox{稳重的矩形风格} & \checkmark    & \times  \\ 
+\hline
+{\color{blue}略带忧伤的蓝色主题} & \checkmark     & \times  \\ 
+\hline
+{\color{cyan}支}{\color{ceruleanblue}持}{\color{cherryblossompink}超}{\color{coquelicot}多}{\color{cornflowerblue}颜}{\color{daffodil}色} & \checkmark    & \times   \\
+\bottomrule
+\end{tabular}
+\end{table}
+  
+  \vspace*{0.5cm}
+  \par\centering
+  总结：冯家屯电刀 {\Huge\alert{赢} !}
+      
+\end{frame}
+  
+  % thanks!
+  \begin{frame}
+  \begin{center}
+      {\Huge\kaishu 感谢!}
+  \end{center}
+  \end{frame}
+\end{document}
